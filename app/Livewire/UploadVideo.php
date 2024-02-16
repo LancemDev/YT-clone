@@ -15,6 +15,7 @@ use Livewire\WithFileUploads;
 use Mary\Traits\Toast;
 use Pion\Laravel\ChunkUpload\Handler\ContentRangeUploadHandler;
 use Pion\Laravel\ChunkUpload\Receiver\FileReceiver;
+use App\Models\User as user;
 
 class UploadVideo extends Component
 {

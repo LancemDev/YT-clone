@@ -44,7 +44,7 @@
 
 
                                 <!-- Authentication -->
-                                <form method="POST" action="{{ route('logout') }}" x-data>
+                                <form method="GET" action="{{ route('logout') }}" x-data>
                                     @csrf
 
                                     <x-menu-item icon="fas.arrow-right-to-bracket" link="{{ route('logout') }}"

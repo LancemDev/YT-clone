@@ -44,7 +44,7 @@
                 <span>
                     <x-icon name="fas.upload" label="Upload Video"/>
                 </span>
-                <input type="file" x-on:change.prevent="submit" x-ref="file" class="hidden" id="video"
+                <input type="file" x-on:change.prevent="submit" x-ref="file" class="hidden" id="video">
             </label>
         </div>
         <template x-if="uploader">
@@ -69,7 +69,6 @@
                 <x-input label="Title" wire:model="form.title"/>
                 <x-textarea hint="Max 1000 characters" label="Description" wire:model="form.description"/>
                 <x-tags id="tags" label="Tags" wire:model="form.tags"/>
-                <x-datetime label="Schedule For" wire:model="form.live_at" icon="o-calendar" type="datetime-local"/>
             </div>
             @if ($video->thumbnail_path)
                 <x-slot:actions>
