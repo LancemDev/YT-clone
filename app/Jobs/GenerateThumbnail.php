@@ -39,6 +39,6 @@ class GenerateThumbnail implements ShouldQueue
                     'thumbnail_path' => $media->getPath()
                 ]);
             })
-            ->save('/thumbnails/' . Str::uuid() . '.jpg');
+            ->save('thumbnails/' . Str::uuid() . '.jpg');
     }
 }
